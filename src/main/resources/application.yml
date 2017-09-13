@@ -1,0 +1,22 @@
+---
+
+security:
+  user:
+    name: adminuser
+    password: admin
+
+logging:
+  level:
+    com:
+      netflix:
+        eureka: OFF
+        discovery: OFF
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+    enableSelfPreservation: false
